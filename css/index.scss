@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+button,
+select,
+textarea,
+input,
+label,
+option,
+fieldset,
+legend {
+    font-family: 微软雅黑E\8F6F\96C5\9ED1, Tahoma, Verdana;
+    font-size: 12px;
+    line-height: 18px;
+    color: #444;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none
+}
+
+;
+body {
+    background-color: #f6f6f6;
+}
+
+.clear {
+    height: 1px;
+    overflow: hidden;
+    clear: both;
+}
+
+a,
+img {
+    border: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    &:hover {
+        color: #0053a6;
+    }
+    ;
+}
+
+li {
+    list-style-type: none;
+}
+
+// 导航部分开始
+#nav {
+    width: 100%;
+    background: #F2F2F2;
+    border-bottom: 1px solid #B3B3B3;
+    box-shadow: 0px 2px 3px #E4E4E4;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    position: fixed;
+    .navlist {
+        height: 50px;
+        li {
+            float: left;
+            width: 25%;
+            a {
+                border-right: 1px solid #EAEAEA;
+                width: 100%;
+                height: 50px;
+                display: inline-block;
+                text-align: center;
+                span {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    background: url(../images/icon/icon.png) no-repeat 0 -46px;
+                    background-size: 214px auto;
+                }
+                .active {
+                    background-position: 0 0;
+                }
+            }
+        }
+        #nav-2 {
+            a {
+                span {
+                    background-position: -51px -46px;
+                }
+                .active {
+                    background-position: -51px 0;
+                }
+            }
+        }
+        #nav-3 {
+            a {
+                span {
+                    background-position: -161px -46px;
+                }
+                .active {
+                    background-position: -161px 0;
+                }
+            }
+        }
+        #nav-4 {
+            a {
+                span {
+                    background-position: -101px -46px;
+                }
+                .active {
+                    background-position: -101px 0;
+                }
+            }
+        }
+    }
+}
+
+// 导航部分结束
+// 图片滚动部分开始
+.indexslider {
+    left: 0;
+    width: 100%;
+    height: 200px;
+    // top: 51px;
+    position: relative;
+    #topSlider {
+        height: 200px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            // z-index: 20;
+        }
+        .top-price {
+            height: 45px;
+            width: 100%;
+            background-color: black;
+            opacity: 0.7;
+            position: absolute;
+            // z-index: 999;
+            bottom: 0;
+            left: 0;
+            .leftContent {
+                float: left;
+                p {
+                    color: snow;
+                    width: 200px;
+                    overflow: hidden;
+                    line-height: 20px;
+                    text-overflow: ellipsis;
+                    // display: block;
+                    text-indent: 12px;
+                    white-space: nowrap;
+                    span {
+                        color: yellowgreen;
+                        font-weight: 600;
+                    }
+                }
+            }
+            a {
+                color: snow;
+                width: 100px;
+                height: 30px;
+                background-color: green;
+                ;
+                float: right;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 7px;
+                margin-right: 7px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// 图片滚动部分结束
+// 产品列表部分开始
+.productList {
+    position: relative;
+    top: 10px;
+    overflow: hidden;
+    width: 99%;
+    margin: 0px auto 5px auto;
+    overflow: hidden;
+    ul {
+        width: 100%;
+        li {
+            height: 125px;
+            width: 100%;
+            background-color: snow;
+            -webkit-box-shadow: 0 0 5px #ccc;
+            -moz-box-shadow: 0 0 5px #ccc;
+            box-shadow: 0 0 5px #ccc;
+            border: 1px solid #f2f2f2;
+            margin: 10px;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                .triangle-topleft {
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    z-index: 990;
+                    border-top: 60px solid #1aa818;
+                    border-right: 60px solid transparent;
+                    cursor: pointer;
+                }
+                .shuxing {
+                    position: absolute;
+                    z-index: 999;
+                    color: snow;
+                    display: block;
+                    transform: rotate(-45deg);
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: 40px;
+                    height: 40px;
+                    left: 20px;
+                }
+                .product-img1 {
+                    width: 100px;
+                    height: 100px;
+                    float: left;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .product-content {
+                    float: right;
+                    width: 64%;
+                    .ptitle {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 8px 0px;
+                        color: #666;
+                    }
+                    .pcontent {
+                        color: #999;
+                    }
+                    .pprice {
+                        color: black;
+                        font-size: 15px;
+                        margin: 5px 0;
+                        span {
+                            color: green;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 产品列表部分结束
