@@ -114,6 +114,7 @@ li {
   left: 0;
   width: 100%;
   height: 200px;
+  top: 52px;
   position: relative; }
   .indexslider #topSlider {
     height: 200px;
@@ -159,11 +160,10 @@ li {
 
 .productList {
   position: relative;
-  top: 10px;
+  top: 60px;
   overflow: hidden;
   width: 99%;
-  margin: 0px auto 5px auto;
-  overflow: hidden; }
+  margin: 0px auto 5px auto; }
   .productList ul {
     width: 100%; }
     .productList ul li {
